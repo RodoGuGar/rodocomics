@@ -1,6 +1,6 @@
 .card {
   max-width: 300px;
-  max-height: 300px;
+  max-height: 700px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -58,4 +58,21 @@
   padding: 0;
   background-color: black;
   border-radius: 10px;
+}
+
+.card_erase {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.card_erase:hover {
+  background-color: rgb(123, 3, 3);
+}
+
+.card_erase:active {
+  background-color: rgb(20, 20, 93);
+  height: 30px;
+  border-width: 5px;
+  border-color: white;
 }

@@ -17,6 +17,7 @@ const form = document.querySelector(".form");
 const formCardInputs = document.querySelectorAll(".form_card__input");
 
 const formChar = document.querySelector("#form-player");
+const card = {};
 
 const data = [
   {
@@ -146,8 +147,6 @@ form.addEventListener("submit", (e) => {
 
 formChar.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  const card = {};
 
   formCardInputs.forEach((formCardInput) => {
     card[formCardInput.name] = formCardInput.value;

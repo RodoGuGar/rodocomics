@@ -1,8 +1,9 @@
 .nav {
-  max-width: 400px;
+  max-width: inherit;
 }
 
 .nav_links {
   list-style-type: none;
   color: white;
+  margin-right: 30px;
 }

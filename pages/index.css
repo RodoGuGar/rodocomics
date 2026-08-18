@@ -6,6 +6,7 @@
 @import url(../blocks/form.css);
 @import url(../blocks/card.css);
 @import url(../blocks/card_container.css);
+@import url(../blocks/responsive.css);
 
 body {
   scroll-behavior: smooth;
