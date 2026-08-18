@@ -1,0 +1,29 @@
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.card_img_button {
+  display: flex;
+  flex-direction: row;
+}
+
+.card_votes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card_vote_image_good {
+  display: none;
+}
+
+.card_vote_image_bad {
+  display: none;
+}
+
+.card_vote_image_open {
+  display: flex;
+}

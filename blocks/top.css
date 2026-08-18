@@ -1,0 +1,56 @@
+.top {
+  background-color: rgba(0, 0, 0, 0.434);
+  height: 200px;
+  border-radius: 80px;
+  color: white;
+}
+
+.user_info_edit,
+.card_info_edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.user_info_edit:hover,
+.card_info_edit:hover {
+  background-color: white;
+  color: black;
+}
+
+.user_info_edit:active,
+.card_info_edit:active {
+  background-color: gray;
+  color: black;
+}
+
+.top_container {
+  display: flex;
+  align-content: space-around;
+}
+
+.top_image {
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+.top-left {
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-middle {
+  margin-right: auto;
+}
+
+.top-right {
+  max-width: 200px;
+  align-content: center;
+  margin-right: auto;
+}

@@ -1,0 +1,54 @@
+.popup_user {
+  padding-top: 20px;
+  height: 400px;
+  position: absolute;
+  width: 400px;
+  background-color: rgb(20, 20, 93);
+  display: none;
+  align-self: center;
+  justify-self: center;
+}
+.popup_card {
+  padding-top: 20px;
+  height: 400px;
+  position: absolute;
+  width: 400px;
+  background-color: rgb(123, 3, 3);
+  display: none;
+  align-self: center;
+  justify-self: center;
+}
+
+.popup_tittle {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.467);
+}
+
+.popup_user.popup_open {
+  display: flex;
+}
+
+.popup_card.popup_open {
+  display: flex;
+}
+
+.popup_container {
+  width: 100%;
+}
+
+.popup_close_user,
+.popup_close_card {
+  position: absolute;
+  right: -20px;
+  top: -22px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.popup_close_user:hover,
+.popup_close_card:hover {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}

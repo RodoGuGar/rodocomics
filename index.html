@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RodoComics</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/976693.jpg" alt="" class="header_logo" />
+      <nav class="nav">
+        <ul class="nav_links">
+          <li class="nav_link">Iniciar sesion</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="top_container">
+          <div>
+            <img src="./images/foto_perfil.jpg" alt="" class="top_image" />
+          </div>
+          <div class="top-left">
+            <h2 class="profile_name">Rodolfo Guerra</h2>
+            <h3 class="profile_description">Estudiante Ing</h3>
+            <br /><button class="user_info_edit">Editar usuario</button>
+          </div>
+          <div class="top-middle"></div>
+          <div class="top-right top_button">
+            <button class="card_info_edit">Agregar tarjeta</button>
+          </div>
+        </div>
+
+        <div class="popup_user" id="popup_user">
+          <div class="popup_container">
+            <div class="popup_tittle">Cambiar usuario</div>
+            <button class="popup_close_user">X</button>
+            <div class="popup_content">
+              <form action="" class="form">
+                <label for="name">Nombre</label>
+                <input type="text" class="form_name form_input" name="name" />
+                <label for="description">Descripcion</label>
+                <input
+                  type="text"
+                  class="form_description"
+                  name="description"
+                  id="description"
+                />
+                <button class="form_button" id="form_button-user">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup_card" id="popup_card">
+          <div class="popup_container">
+            <div class="popup_tittle">Agregar personajes</div>
+            <button class="popup_close_card">X</button>
+            <div class="popup_content">
+              <form action="" class="form" id="form-player">
+                <label for="name">Nombre de personaje</label>
+                <input
+                  type="text"
+                  class="form_name form_card__input"
+                  name="title"
+                />
+                <label for="editorial">Imagen</label>
+                <input
+                  type="text"
+                  class="form_imagen form_card__input"
+                  name="link"
+                  id="imagen"
+                />
+                <label for="description">Descripcion</label>
+                <input
+                  type="text"
+                  class="form_description form_card__input"
+                  name="description"
+                  id="description"
+                />
+
+                <button class="form_button" id="form_button-card">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <section class="content">
+      <div class="card_container"></div>
+    </section>
+    <template id="card_template">
+      <div class="card">
+        <h2 class="card_title">Rodolfo Guerra</h2>
+        <div class="card_img_button">
+          <img src="./images/yochango.jpg" alt="" class="card_image" />
+          <div class="card_votes">
+            <img
+              src="./images/spiderman.png"
+              class="card_vote_image_good"
+              alt=""
+            />
+            <h3 class="card_counter">0</h3>
+            <button class="card_button">
+              <img src="./images/icon_up.png" alt="" />
+            </button>
+            <button class="card_button downvote">
+              <img src="./images/icon_down.png" alt="" />
+            </button>
+            <img src="./images/venom.png" class="card_vote_image_bad" alt="" />
+          </div>
+        </div>
+
+        <p class="card_description">Estudiante UTL</p>
+      </div>
+    </template>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>

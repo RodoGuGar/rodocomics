@@ -1,0 +1,20 @@
+@import url(../vendor/necolas-normalize.css-be14934/normalize.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/top.css);
+@import url(../blocks/popup.css);
+@import url(../blocks/form.css);
+@import url(../blocks/card.css);
+@import url(../blocks/card_container.css);
+
+body {
+  scroll-behavior: smooth;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-image: url(../images/fondo.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(3px);
+}
