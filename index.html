@@ -39,7 +39,12 @@
             <div class="popup_content">
               <form action="" class="form">
                 <label for="name">Nombre</label>
-                <input type="text" class="form_name form_input" name="name" />
+                <input
+                  type="text"
+                  class="form_name form_input"
+                  name="name"
+                  id="name"
+                />
                 <label for="description">Descripcion</label>
                 <input
                   type="text"
@@ -76,7 +81,6 @@
                   type="text"
                   class="form_description form_card__input"
                   name="description"
-                  id="description"
                 />
 
                 <button class="form_button" id="form_button-card">Save</button>
@@ -86,7 +90,7 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
     <section class="content">
       <div class="card_container"></div>
     </section>
@@ -117,5 +121,20 @@
       </div>
     </template>
     <script type="module" src="./scripts/script.js"></script>
+
+        <footer>
+      <div class="footer_container">
+        <div class="footer_copy"><h2>©Copyright advisement - All the characters rights goes to their company</h4></div>
+        <div class="footer_access">
+          <li>
+            <h4>Accesibilidad</h4>
+          </li>
+          <li>
+            <h4>Términos y condiciones</h4></li>
+          <li>
+            <h4>Politica de privacidad</h4></li>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

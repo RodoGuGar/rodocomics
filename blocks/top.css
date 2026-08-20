@@ -1,5 +1,5 @@
 .top {
-  background-color: rgba(0, 0, 0, 0.434);
+  background-color: rgba(0, 0, 0, 0.726);
   height: 200px;
   border-radius: 80px;
   color: white;
@@ -43,6 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .top-middle {

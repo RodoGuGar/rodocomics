@@ -1,6 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.542);
+  color: white;
 }
 
 .form_button {

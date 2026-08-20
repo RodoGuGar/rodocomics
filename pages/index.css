@@ -7,6 +7,7 @@
 @import url(../blocks/card.css);
 @import url(../blocks/card_container.css);
 @import url(../blocks/responsive.css);
+@import url(../blocks/footer.css);
 
 body {
   scroll-behavior: smooth;
@@ -17,5 +18,4 @@ body {
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
-  backdrop-filter: blur(3px);
 }

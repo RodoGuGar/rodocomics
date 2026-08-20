@@ -1,0 +1,16 @@
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer_copy {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_access {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+}

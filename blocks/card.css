@@ -6,10 +6,26 @@
   flex-direction: column;
   color: white;
   padding: 50px;
+  background-color: rgba(0, 0, 0, 0.726);
+  margin: 10px;
+  transition: 1.5s;
+}
+
+.card:hover {
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid white;
+}
+
+.card:hover .card_image {
+  object-fit: contain;
+  width: 300px;
+  height: 350px;
 }
 
 .card_title {
   background-color: black;
+  overflow: hidden;
 }
 
 .card_description {
@@ -17,11 +33,15 @@
   background-color: black;
   justify-content: right;
   margin-right: 50px;
+  overflow: hidden;
 }
 
 .card_image {
   max-height: 300px;
-  width: 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .card_button {

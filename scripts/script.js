@@ -1,7 +1,7 @@
 const popup = document.querySelector("#popup_user");
 const popupCard = document.querySelector("#popup_card");
 const userInfoEdit = document.querySelector(".user_info_edit");
-const cardInfoEdit = document.querySelector(".top_button");
+const cardInfoEdit = document.querySelector(".card_info_edit");
 const popupClose = popup.querySelector(".popup_close_user");
 const popupCloseCard = popupCard.querySelector(".popup_close_card");
 const card_template = document.querySelector("#card_template");
@@ -13,6 +13,8 @@ const formDespcription = document.querySelector(".form_description");
 const userInfoName = document.querySelector(".profile_name");
 const userInfoDescription = document.querySelector(".profile_description");
 const form = document.querySelector(".form");
+const userNameInp = document.querySelector("#name");
+const userDescInp = document.querySelector("#description");
 
 const formCardInputs = document.querySelectorAll(".form_card__input");
 
@@ -119,6 +121,9 @@ data.forEach((personaje) => {
 userInfoEdit.addEventListener("click", () => {
   popup.classList.toggle("popup_open");
   console.log("ola");
+  userNameInp.value = userInfoName.textContent;
+
+  userDescInp.value = userInfoDescription.textContent;
 });
 
 cardInfoEdit.addEventListener("click", () => {
@@ -150,6 +155,7 @@ formChar.addEventListener("submit", (e) => {
 
   formCardInputs.forEach((formCardInput) => {
     card[formCardInput.name] = formCardInput.value;
+    popupCard.classList.toggle("popup_open");
   });
 
   console.log(card);
